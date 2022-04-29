@@ -8,17 +8,7 @@ class Rocket extends Phaser.GameObjects.Sprite{
     }
 
     update(){
-        const movementSpeed = 3;
-        if (keyLEFT.isDown){
-            this.p1Rocket.x -= movementSpeed;
-        }
-
-        if (keyLEFT.isDown){
-            this.p1Rocket.x += movementSpeed;
-        }
-
-
-
+        
         if(this.firing){
             this.y-=10;
             

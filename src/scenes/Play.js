@@ -31,9 +31,16 @@ class Play extends Phaser.Scene{
 
     update(){
         this.starfield.tilePositionX -=4;       
-        this.p1Rocket.update();
-
         
+
+        const movementSpeed = 3;
+        if (keyLEFT.isDown){
+            this.p1Rocket.x -= movementSpeed;
+        }
+
+        if (keyLEFT.isDown){
+            this.p1Rocket.x += movementSpeed;
+        }
     }
 }
 
